@@ -1,0 +1,19 @@
+[package]
+name = "libpebxtract"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+memflow = "0.2.3"
+memflow-win32 = "0.2.0"
+
+[lib]
+name = "pebxtract"
+crate-type = ["staticlib"]
+
+[profile.release]
+strip = true  # Automatically strip symbols from the binary.
+opt-level = "z"  # Optimize for size.
+lto = true
+codegen-units = 1
+panic = "abort"
