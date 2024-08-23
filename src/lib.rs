@@ -2,6 +2,11 @@ use memflow::prelude::v1::*;
 use memflow_win32::prelude::v1::*;
 
 #[no_mangle]
+pub extern "C" fn rust_function() -> i32 {
+    42
+}
+
+#[no_mangle]
 pub extern "C" fn get_cod_peb() -> u64 {
 
     let inventory = Inventory::scan();

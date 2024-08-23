@@ -1,1 +1,0 @@
-extern uint64_t get_cod_peb();
