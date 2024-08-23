@@ -9,4 +9,4 @@ memflow-win32 = "0.2.0"
 
 [lib]
 name = "pebxtract"
-crate-type = ["staticlib"]
+crate-type = ["cdylib"]
